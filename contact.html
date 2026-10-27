@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Innovative Testing Solution</title>
+  <meta name="description" content="Request a quotation from Innovative Testing Solution. Offices in Al Khobar, Saudi Arabia and Dubai, UAE.">
+  <meta name="theme-color" content="#070d22">
+  <link rel="icon" href="favicon.png">
+</head>
+<body data-page="contact">
+  <main class="page">
+    <section class="card" aria-labelledby="c-title">
+      <header data-nav></header>
+      <div class="page-head">
+        <div class="crumbs mono"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
+        <h1 class="display" id="c-title" data-reveal>Contact Us.</h1>
+        <p class="lede" data-reveal style="--d:.08s">Tell us what you need. Our sales team replies with a quotation, availability and lead time.</p>
+      </div>
+      <div class="rule"></div>
+      <div class="inner" id="form">
+        <div class="contact">
+          <form class="form" novalidate data-form>
+            <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required><span class="err"></span></div>
+            <div class="field"><label for="f-company">Company / institution</label><input id="f-company" name="company" autocomplete="organization"></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><span class="err"></span></div>
+            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+            <div class="field field--full"><label for="f-subject">Subject</label>
+              <select id="f-subject" name="subject">
+                <option>Chemical Supply</option>
+                <option>Laboratory Equipment Supply</option>
+                <option>Sourcing &amp; Procurement</option>
+                <option>Customized Product Sourcing</option>
+                <option>Requirement-Based Supply</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="enq-box" data-enq-box hidden><b>Your enquiry list</b><ul data-enq-lines></ul></div>
+            <div class="field field--full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Product names, grades, pack sizes, quantities, delivery city…" required></textarea><span class="err"></span></div>
+            <div class="form-actions">
+              <button class="btn" type="submit">Send enquiry <span data-icon="arrow"></span></button>
+              <button class="btn btn--ghost" type="button" data-wa><span data-icon="whatsapp"></span> Send on WhatsApp</button>
+              <small>Sending opens your email app with the enquiry filled in, addressed to sales@innovativeksa.com.</small>
+            </div>
+            <div class="sent" data-sent role="status">Your email app should now be open with the enquiry ready to send. If nothing opened, write to <a href="mailto:sales@innovativeksa.com" style="color:var(--blue)">sales@innovativeksa.com</a>.</div>
+          </form>
+          <aside class="c-side" data-reveal style="--d:.1s">
+            <div class="quick">
+              <a href="tel:+966548825759"><span>Call KSA</span><b>+966 54 882 5759</b></a>
+              <a href="mailto:sales@innovativeksa.com"><span>Email sales</span><b>sales@innovativeksa.com</b></a>
+            </div>
+            <div style="height:var(--gutter)"></div>
+            <div data-offices></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <footer class="card" data-footer></footer>
+  </main>
+  <script type="module" src="/src/contact.js"></script>
+</body>
+</html>
